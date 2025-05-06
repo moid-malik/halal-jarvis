@@ -38,7 +38,7 @@ const toolNode = new ToolNode(allTools);
 // Connect to the LLM provider with better tool instructions
 const initialiseModel = () => {
   const model = new ChatGroq({
-    model: "llama3-70b-8192",
+    model: "llama-3.1-8b-instant",
     apiKey: process.env.GROQ_API_KEY,
     temperature: 0.7,
     maxTokens: 4096,
